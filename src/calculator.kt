@@ -7,16 +7,16 @@ fun main() {
     val num1 = read.nextDouble()
 
     println("Enter an operator (+, -, *, /): ")
-    val operator = read.next()[0]
+    val operator = readln()
 
     println("Enter second number: ")
     val num2 = read.nextDouble()
 
     val result = when (operator) {
-        '+' -> num1 + num2
-        '-' -> num1 - num2
-        '*' -> num1 * num2
-        '/' -> if (num2 != 0.0) num1 / num2 else "Cannot divide by zero"
+        "+" -> num1 + num2
+        "-" -> num1 - num2
+        "*" -> num1 * num2
+        "/" -> if (num2 != 0.0) num1 / num2 else "Cannot divide by zero"
         else -> "Invalid operator"
     }
 
